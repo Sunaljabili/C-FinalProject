@@ -31,5 +31,10 @@ namespace BackEnd_Final_Project.Forms
         {
 
         }
+
+        private void TxtEmail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

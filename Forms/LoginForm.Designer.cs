@@ -38,42 +38,43 @@
             // TxtEmail
             // 
             this.TxtEmail.AutoSize = true;
-            this.TxtEmail.Location = new System.Drawing.Point(26, 28);
+            this.TxtEmail.Location = new System.Drawing.Point(38, 108);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(39, 13);
+            this.TxtEmail.Size = new System.Drawing.Size(32, 13);
             this.TxtEmail.TabIndex = 0;
-            this.TxtEmail.Text = "E-Poçt";
+            this.TxtEmail.Text = "Email";
+            this.TxtEmail.Click += new System.EventHandler(this.TxtEmail_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 95);
+            this.label2.Location = new System.Drawing.Point(38, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Şifrə";
+            this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 172);
+            this.button1.Location = new System.Drawing.Point(41, 248);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 33);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Daxil ol";
+            this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 54);
+            this.textBox1.Location = new System.Drawing.Point(41, 143);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(171, 20);
             this.textBox1.TabIndex = 3;
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(29, 122);
+            this.TxtPassword.Location = new System.Drawing.Point(41, 212);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(171, 20);
             this.TxtPassword.TabIndex = 4;
@@ -83,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 245);
+            this.ClientSize = new System.Drawing.Size(298, 314);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
