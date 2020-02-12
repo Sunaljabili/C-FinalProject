@@ -1,0 +1,10 @@
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd Final Project.csprojAssemblyReference.cache
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd_Final_Project.Forms.EmailTxt.resources
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd_Final_Project.Properties.Resources.resources
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd Final Project.csproj.GenerateResource.cache
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd Final Project.csproj.CoreCompileInputs.cache
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\bin\Debug\BackEnd Final Project.exe.config
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\bin\Debug\BackEnd Final Project.exe
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\bin\Debug\BackEnd Final Project.pdb
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd Final Project.exe
+C:\Users\Code\source\repos\BackEnd Final Project\BackEnd Final Project\obj\Debug\BackEnd Final Project.pdb
