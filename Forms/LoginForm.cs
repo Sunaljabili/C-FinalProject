@@ -7,34 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BackEnd_Final_Project.Data;
+using CryptoHelper;
+using BackEnd_Final_Project.Models;
 
 namespace BackEnd_Final_Project.Forms
 {
-    public partial class EmailTxt : Form
+    public partial class LoginForm : Form
     {
-        public EmailTxt()
+        private readonly LibraryDbContext _context;
+        public LoginForm()
         {
+            _context = new LibraryDbContext();
             InitializeComponent();
         }
 
-        private void Label2_Click(object sender, EventArgs e)
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
 
-        }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
 
-        }
+            if (string.IsNullOrEmpty(EmailTxt.Text))
+            {
+                MessageBox.Show("Email yazin");
+                return;
+            }
+            if (string.IsNullOrEmpty(TxtPassword.Text))
+            {
+                MessageBox.Show("Password yazin");
+                return;
+            }
 
-        private void TxtPassword_TextChanged(object sender, EventArgs e)
-        {
 
-        }
+            Customer Customer = _context.Customers.FirstOrDefault(u => u.Email == EmailTxt.Text);
 
-        private void TxtEmail_Click(object sender, EventArgs e)
-        {
+            if (Customer != null && Crypto.VerifyHashedPassword(Customer.Password, EmailTxt.Text))
+            {
+                DashBoardForm dashBoard = new DashBoardForm();
+                dashBoard.Show();
 
+                this.Hide();
+                return;
+            }
+            MessageBox.Show("Email və ya Password yalnishdir.");
         }
     }
 }

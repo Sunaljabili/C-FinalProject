@@ -36,11 +36,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CryptoHelper, Version=3.0.2.0, Culture=neutral, PublicKeyToken=646ad3faa20406ba, processorArchitecture=MSIL">
+      <HintPath>packages\CryptoHelper.3.0.2\lib\netstandard2.0\CryptoHelper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNetCore.Cryptography.Internal.2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNetCore.Cryptography.KeyDerivation.2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -57,11 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\LibraryDbContext.cs" />
-    <Compile Include="Forms\DashBoard.cs">
+    <Compile Include="Forms\DashBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DashBoard.Designer.cs">
-      <DependentUpon>DashBoard.cs</DependentUpon>
+    <Compile Include="Forms\DashBoardForm.Designer.cs">
+      <DependentUpon>DashBoardForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -69,14 +78,25 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.cs" />
+    <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.designer.cs">
+      <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Report.cs" />
+    <EmbeddedResource Include="Forms\DashBoardForm.resx">
+      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.resx">
+      <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +106,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -103,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

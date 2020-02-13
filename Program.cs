@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BackEnd_Final_Project.Forms;
 namespace BackEnd_Final_Project
 {
     static class Program
@@ -16,6 +16,7 @@ namespace BackEnd_Final_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new DashBoardForm());
        
         }
     }

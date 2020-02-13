@@ -1,7 +1,23 @@
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\Library.csprojAssemblyReference.cache
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.EmailTxt.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Properties.Resources.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\Library.csproj.GenerateResource.cache
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\Library.csproj.CoreCompileInputs.cache
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd Final Project.exe
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd Final Project.pdb
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\BackEnd Final Project.exe.config
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\BackEnd Final Project.exe
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\BackEnd Final Project.pdb
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.dll
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.xml
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\Library.csproj.CopyComplete
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.BookAndCustomerAndManagerAndReportCreated.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.LoginForm.resources
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\CryptoHelper.dll
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\CryptoHelper.xml
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.DashBoardForm.resources

@@ -1,6 +1,6 @@
 ﻿namespace BackEnd_Final_Project.Forms
 {
-    partial class EmailTxt
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,70 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TxtEmail = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EmailLbl = new System.Windows.Forms.Label();
+            this.PasswordLbl = new System.Windows.Forms.Label();
+            this.LoginBtn = new System.Windows.Forms.Button();
+            this.EmailTxt = new System.Windows.Forms.TextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // TxtEmail
+            // EmailLbl
             // 
-            this.TxtEmail.AutoSize = true;
-            this.TxtEmail.Location = new System.Drawing.Point(38, 108);
-            this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(32, 13);
-            this.TxtEmail.TabIndex = 0;
-            this.TxtEmail.Text = "Email";
-            this.TxtEmail.Click += new System.EventHandler(this.TxtEmail_Click);
+            this.EmailLbl.AutoSize = true;
+            this.EmailLbl.Location = new System.Drawing.Point(38, 145);
+            this.EmailLbl.Name = "EmailLbl";
+            this.EmailLbl.Size = new System.Drawing.Size(32, 13);
+            this.EmailLbl.TabIndex = 0;
+            this.EmailLbl.Text = "Email";
             // 
-            // label2
+            // PasswordLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
+            this.PasswordLbl.AutoSize = true;
+            this.PasswordLbl.Location = new System.Drawing.Point(38, 194);
+            this.PasswordLbl.Name = "PasswordLbl";
+            this.PasswordLbl.Size = new System.Drawing.Size(53, 13);
+            this.PasswordLbl.TabIndex = 1;
+            this.PasswordLbl.Text = "Password";
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.Location = new System.Drawing.Point(41, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(41, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Location = new System.Drawing.Point(41, 212);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(171, 20);
-            this.TxtPassword.TabIndex = 4;
-            this.TxtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
+            this.LoginBtn.Location = new System.Drawing.Point(41, 258);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(171, 33);
+            this.LoginBtn.TabIndex = 2;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // EmailTxt
             // 
+            this.EmailTxt.Location = new System.Drawing.Point(41, 171);
+            this.EmailTxt.Name = "EmailTxt";
+            this.EmailTxt.Size = new System.Drawing.Size(171, 20);
+            this.EmailTxt.TabIndex = 3;
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(41, 221);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(171, 20);
+            this.TxtPassword.TabIndex = 4;
+            this.TxtPassword.UseSystemPasswordChar = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::BackEnd_Final_Project.Properties.Resources.Panda;
+            this.pictureBox1.Location = new System.Drawing.Point(76, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(119, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LoginForm
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 314);
+            this.ClientSize = new System.Drawing.Size(273, 313);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.TxtEmail);
-            this.Name = "EmailTxt";
+            this.Controls.Add(this.EmailTxt);
+            this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.PasswordLbl);
+            this.Controls.Add(this.EmailLbl);
+            this.Name = "LoginForm";
             this.Text = "LoginForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,10 +112,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label TxtEmail;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label EmailLbl;
+        private System.Windows.Forms.Label PasswordLbl;
+        private System.Windows.Forms.Button LoginBtn;
+        private System.Windows.Forms.TextBox EmailTxt;
         private System.Windows.Forms.TextBox TxtPassword;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

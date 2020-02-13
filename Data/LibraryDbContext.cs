@@ -10,9 +10,9 @@ namespace BackEnd_Final_Project.Data
 {
    public class LibraryDbContext:DbContext
     {
+       
 
-
-        public LibraryDbContext() : base("LibraryDbContext")
+        public LibraryDbContext() : base("BookLibrary")
         {
 
         }

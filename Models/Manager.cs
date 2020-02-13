@@ -1,17 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace BackEnd_Final_Project.Models
 {
     public class Manager
     {
-        public int id { get; set; }
+        [Required]
+        public int Id { get; set; }
 
+        [Required]
+        public bool Status { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string Name { get; set; }
 
+        [Required]
+        [MaxLength(50)]
         public string Surname { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string Phone { get; set; }
+
+        [Required]
+        public DateTime CreatedAt { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string CreatedBy { get; set; }
     }
 }

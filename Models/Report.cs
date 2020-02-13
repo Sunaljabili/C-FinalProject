@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BackEnd_Final_Project
+namespace BackEnd_Final_Project.Models
 {
    public class Report
     {
+        [Key]
         public int İd { get; set; }
 
         [Required]
@@ -18,10 +19,10 @@ namespace BackEnd_Final_Project
         [Required]
         public string CustomerId { get; set; }
 
-        [Required]
+       
         public DateTime Date { get; set; }
 
-        [Required]
+     
         public DateTime DeadLine { get; set; }
 
         [MaxLength(500)]
