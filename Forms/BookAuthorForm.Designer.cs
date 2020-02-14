@@ -30,8 +30,8 @@
         {
             this.LblName = new System.Windows.Forms.Label();
             this.SurnameLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtName = new System.Windows.Forms.TextBox();
+            this.TxtSurname = new System.Windows.Forms.TextBox();
             this.StatusLbl = new System.Windows.Forms.Label();
             this.RdBtnActive = new System.Windows.Forms.RadioButton();
             this.RdBtnDisabled = new System.Windows.Forms.RadioButton();
@@ -39,15 +39,15 @@
             this.BtnReset = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DgvAuthors = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.SerchBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAuthors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,19 +69,19 @@
             this.SurnameLbl.TabIndex = 1;
             this.SurnameLbl.Text = "Surname";
             // 
-            // textBox1
+            // TxtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.TxtName.Location = new System.Drawing.Point(105, 115);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(100, 20);
+            this.TxtName.TabIndex = 3;
             // 
-            // textBox2
+            // TxtSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.TxtSurname.Location = new System.Drawing.Point(105, 162);
+            this.TxtSurname.Name = "TxtSurname";
+            this.TxtSurname.Size = new System.Drawing.Size(100, 20);
+            this.TxtSurname.TabIndex = 4;
             // 
             // StatusLbl
             // 
@@ -122,6 +122,7 @@
             this.BtnCreate.TabIndex = 8;
             this.BtnCreate.Text = "Create";
             this.BtnCreate.UseVisualStyleBackColor = true;
+            this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // BtnReset
             // 
@@ -131,6 +132,7 @@
             this.BtnReset.TabIndex = 9;
             this.BtnReset.Text = "Reset";
             this.BtnReset.UseVisualStyleBackColor = true;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // UpdateBtn
             // 
@@ -140,6 +142,7 @@
             this.UpdateBtn.TabIndex = 10;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -150,16 +153,16 @@
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // DgvAuthors
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvAuthors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvAuthors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(320, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(245, 150);
-            this.dataGridView1.TabIndex = 12;
+            this.DgvAuthors.Location = new System.Drawing.Point(320, 159);
+            this.DgvAuthors.Name = "DgvAuthors";
+            this.DgvAuthors.Size = new System.Drawing.Size(245, 150);
+            this.DgvAuthors.TabIndex = 12;
             // 
             // Column1
             // 
@@ -180,7 +183,6 @@
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "BookAuthors";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // textBox3
             // 
@@ -188,16 +190,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(107, 20);
             this.textBox3.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BackEnd_Final_Project.Properties.Resources.Author1;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // directorySearcher1
             // 
@@ -214,16 +206,26 @@
             this.SerchBtn.Text = "Search";
             this.SerchBtn.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BackEnd_Final_Project.Properties.Resources.Author1;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // BookAuthorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 343);
+            this.ClientSize = new System.Drawing.Size(570, 321);
             this.Controls.Add(this.SerchBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvAuthors);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.BtnReset);
@@ -231,14 +233,13 @@
             this.Controls.Add(this.RdBtnDisabled);
             this.Controls.Add(this.RdBtnActive);
             this.Controls.Add(this.StatusLbl);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtSurname);
+            this.Controls.Add(this.TxtName);
             this.Controls.Add(this.SurnameLbl);
             this.Controls.Add(this.LblName);
             this.Name = "BookAuthorForm";
             this.Text = "Author";
-            this.Load += new System.EventHandler(this.BookAuthorForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAuthors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,8 +250,8 @@
 
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.Label SurnameLbl;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.TextBox TxtSurname;
         private System.Windows.Forms.Label StatusLbl;
         private System.Windows.Forms.RadioButton RdBtnActive;
         private System.Windows.Forms.RadioButton RdBtnDisabled;
@@ -258,7 +259,7 @@
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button DeleteBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvAuthors;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label1;

@@ -107,6 +107,10 @@
     <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.designer.cs">
       <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002141112566_AuthorCreated.cs" />
+    <Compile Include="Migrations\202002141112566_AuthorCreated.designer.cs">
+      <DependentUpon>202002141112566_AuthorCreated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -117,6 +121,9 @@
     <Compile Include="Models\Report.cs" />
     <EmbeddedResource Include="Forms\BookAuthorForm.resx">
       <DependentUpon>BookAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookGenreForm.resx">
+      <DependentUpon>BookGenreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
@@ -129,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.resx">
       <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002141112566_AuthorCreated.resx">
+      <DependentUpon>202002141112566_AuthorCreated.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

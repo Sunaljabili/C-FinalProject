@@ -9,6 +9,9 @@ namespace BackEnd_Final_Project.Models
 {
    public class Author
     {
+        
+        
+        [Key]
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
