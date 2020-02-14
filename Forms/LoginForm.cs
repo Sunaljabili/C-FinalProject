@@ -16,7 +16,7 @@ namespace BackEnd_Final_Project.Forms
     public partial class LoginForm : Form
     {
         private readonly LibraryDbContext _context;
-        public LoginForm()
+        public LoginForm(DashBoardForm dashBoardForm)
         {
             _context = new LibraryDbContext();
             InitializeComponent();

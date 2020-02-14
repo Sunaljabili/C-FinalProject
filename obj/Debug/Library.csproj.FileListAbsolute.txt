@@ -24,4 +24,5 @@ C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.Das
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.BookAuthorForm.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.CustomerForm.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.AuthorCreated.resources
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.Book_Genre.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.AuthorAdd.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.CustomerAdd.resources

@@ -20,7 +20,7 @@ using System.ComponentModel.DataAnnotations;
         public string FullName { get; set; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(150)]
         public string Email { get; set; }
 
 

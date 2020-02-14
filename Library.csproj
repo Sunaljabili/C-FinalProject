@@ -73,12 +73,6 @@
     <Compile Include="Forms\BookAuthorForm.Designer.cs">
       <DependentUpon>BookAuthorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BookGenreForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BookGenreForm.Designer.cs">
-      <DependentUpon>BookGenreForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +105,14 @@
     <Compile Include="Migrations\202002141112566_AuthorCreated.designer.cs">
       <DependentUpon>202002141112566_AuthorCreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002141615275_AuthorAdd.cs" />
+    <Compile Include="Migrations\202002141615275_AuthorAdd.designer.cs">
+      <DependentUpon>202002141615275_AuthorAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002141636406_CustomerAdd.cs" />
+    <Compile Include="Migrations\202002141636406_CustomerAdd.designer.cs">
+      <DependentUpon>202002141636406_CustomerAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -121,9 +123,6 @@
     <Compile Include="Models\Report.cs" />
     <EmbeddedResource Include="Forms\BookAuthorForm.resx">
       <DependentUpon>BookAuthorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BookGenreForm.resx">
-      <DependentUpon>BookGenreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
@@ -139,6 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002141112566_AuthorCreated.resx">
       <DependentUpon>202002141112566_AuthorCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002141615275_AuthorAdd.resx">
+      <DependentUpon>202002141615275_AuthorAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002141636406_CustomerAdd.resx">
+      <DependentUpon>202002141636406_CustomerAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -42,9 +42,9 @@
             this.DgvAuthors = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.SerchBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAuthors)).BeginInit();
@@ -116,7 +116,7 @@
             // 
             // BtnCreate
             // 
-            this.BtnCreate.Location = new System.Drawing.Point(30, 276);
+            this.BtnCreate.Location = new System.Drawing.Point(30, 268);
             this.BtnCreate.Name = "BtnCreate";
             this.BtnCreate.Size = new System.Drawing.Size(84, 36);
             this.BtnCreate.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             // BtnReset
             // 
-            this.BtnReset.Location = new System.Drawing.Point(148, 276);
+            this.BtnReset.Location = new System.Drawing.Point(148, 268);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(80, 36);
             this.BtnReset.TabIndex = 9;
@@ -136,43 +136,54 @@
             // 
             // UpdateBtn
             // 
-            this.UpdateBtn.Location = new System.Drawing.Point(320, 113);
+            this.UpdateBtn.Location = new System.Drawing.Point(320, 122);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.Size = new System.Drawing.Size(90, 30);
             this.UpdateBtn.TabIndex = 10;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Visible = false;
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // DeleteBtn
             // 
-            this.DeleteBtn.Location = new System.Drawing.Point(477, 113);
+            this.DeleteBtn.Location = new System.Drawing.Point(475, 122);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(80, 30);
             this.DeleteBtn.TabIndex = 11;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Visible = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // DgvAuthors
             // 
             this.DgvAuthors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvAuthors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2});
-            this.DgvAuthors.Location = new System.Drawing.Point(320, 159);
+            this.Column2,
+            this.Column3});
+            this.DgvAuthors.Location = new System.Drawing.Point(320, 162);
             this.DgvAuthors.Name = "DgvAuthors";
-            this.DgvAuthors.Size = new System.Drawing.Size(245, 150);
+            this.DgvAuthors.Size = new System.Drawing.Size(251, 150);
             this.DgvAuthors.TabIndex = 12;
+            this.DgvAuthors.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAuthors_RowHeaderMouseDoubleClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Name";
+            this.Column1.HeaderText = "Id";
             this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Surname";
+            this.Column2.HeaderText = "Name";
             this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Surname";
+            this.Column3.Name = "Column3";
             // 
             // label1
             // 
@@ -190,12 +201,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(107, 20);
             this.textBox3.TabIndex = 14;
-            // 
-            // directorySearcher1
-            // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
             // SerchBtn
             // 
@@ -220,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 321);
+            this.ClientSize = new System.Drawing.Size(583, 322);
             this.Controls.Add(this.SerchBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
@@ -260,12 +265,12 @@
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.DataGridView DgvAuthors;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
         private System.Windows.Forms.Button SerchBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
