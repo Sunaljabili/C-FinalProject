@@ -21,3 +21,5 @@ C:\Users\Code\Desktop\C# Project Final\bin\Debug\CryptoHelper.xml
 C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
 C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.DashBoardForm.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.BookAuthorForm.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.CustomerForm.resources

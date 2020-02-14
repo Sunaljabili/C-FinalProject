@@ -24,6 +24,9 @@ namespace BackEnd_Final_Project.Data
         public DbSet<Report> Reports { get; set; }
 
         public DbSet<Customer> Customers { get; set; }
+
+        public  DbSet<Author> Authors { get; set; }
+
     }
 
 

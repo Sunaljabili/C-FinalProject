@@ -54,6 +54,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +67,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\LibraryDbContext.cs" />
+    <Compile Include="Forms\BookAuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookAuthorForm.Designer.cs">
+      <DependentUpon>BookAuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookGenreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookGenreForm.Designer.cs">
+      <DependentUpon>BookGenreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DashBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,17 +97,30 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.cs" />
     <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.designer.cs">
       <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Report.cs" />
+    <EmbeddedResource Include="Forms\BookAuthorForm.resx">
+      <DependentUpon>BookAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoardForm.resx">
       <DependentUpon>DashBoardForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Author.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Author.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

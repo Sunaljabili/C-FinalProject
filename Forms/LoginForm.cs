@@ -39,7 +39,7 @@ namespace BackEnd_Final_Project.Forms
             }
 
 
-            Customer Customer = _context.Customers.FirstOrDefault(u => u.Email == EmailTxt.Text);
+            Customer Customer = (_context.Customers.FirstOrDefault(u => u.Email == EmailTxt.Text));
 
             if (Customer != null && Crypto.VerifyHashedPassword(Customer.Password, EmailTxt.Text))
             {

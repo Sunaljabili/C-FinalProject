@@ -181,7 +181,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 366);
             this.Controls.Add(this.PnlSearch);
-            this.Name = "DashBoardForm";
+          
             this.Text = "DashBoard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PnlSearch.ResumeLayout(false);
