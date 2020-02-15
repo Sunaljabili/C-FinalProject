@@ -213,7 +213,6 @@
             // 
             // pictureBox1
             // 
-           
             this.pictureBox1.Location = new System.Drawing.Point(14, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 79);
@@ -225,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 322);
+            this.ClientSize = new System.Drawing.Size(574, 319);
             this.Controls.Add(this.SerchBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);

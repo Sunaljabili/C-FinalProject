@@ -9,21 +9,22 @@ namespace BackEnd_Final_Project.Models
 {
     public class Book
     {
-        [Required]
-        public string BookName { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        public int BookId { get; set; }
+        public string Name { get; set; }
 
         [Required]
-        public string BookSubject { get; set; }
+        public int AuthorId { get; set; }
+
+        public bool Status { get; set; }
 
         [Required]
-        public DateTime Date { get; set; }
+        public decimal SalePrice { get; set; }
 
         [Required]
-        [MaxLength(500)]
-        public string Note { get; set; }
+        public decimal RentPrice { get; set; }
+
 
     }
 }
