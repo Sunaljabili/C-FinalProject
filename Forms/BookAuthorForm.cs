@@ -24,9 +24,9 @@ namespace BackEnd_Final_Project.Forms
             InitializeComponent();
             FillAuthors();
         }
-        // Author Create Method
-        #region Author Creat Method
 
+        #region Author Creat Method
+        // Author Create Method
         private void BtnCreate_Click(object sender, EventArgs e)
         {
             if (TxtName.Text == "")
@@ -62,8 +62,9 @@ namespace BackEnd_Final_Project.Forms
                 FillAuthors();
             }
         }
-        #endregion
         //Author Create Method End
+        #endregion
+
 
 
         #region Author Reset
@@ -108,7 +109,7 @@ namespace BackEnd_Final_Project.Forms
         #endregion
 
         #region FillAuthors Method
-        //Fill Aauthors Method
+        //Fill Authors Method
         public void FillAuthors()
         {
             DgvAuthors.Rows.Clear();
