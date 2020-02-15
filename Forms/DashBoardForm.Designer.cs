@@ -36,7 +36,7 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.GrpSearch = new System.Windows.Forms.GroupBox();
-            this.Name = new System.Windows.Forms.Label();
+            //this.Name = new System.Windows.Forms.Label();
             this.BtnSearch = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@
             // 
             // GrpSearch
             // 
-            this.GrpSearch.Controls.Add(this.Name);
+            //this.GrpSearch.Controls.Add(this.Name);
             this.GrpSearch.Controls.Add(this.BtnSearch);
             this.GrpSearch.Controls.Add(this.textBox1);
             this.GrpSearch.Controls.Add(this.textBox3);
@@ -119,12 +119,12 @@
             // 
             // Name
             // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(31, 27);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(20, 13);
-            this.Name.TabIndex = 8;
-            this.Name.Text = "Ad";
+            //this.Name.AutoSize = true;
+            //this.Name.Location = new System.Drawing.Point(31, 27);
+            //this.Name.Name = "Name";
+            //this.Name.Size = new System.Drawing.Size(20, 13);
+            //this.Name.TabIndex = 8;
+            //this.Name.Text = "Ad";
             // 
             // BtnSearch
             // 
@@ -209,6 +209,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewButtonColumn Column5;
-        private System.Windows.Forms.Label Name;
+        //private System.Windows.Forms.Label Name;
     }
 }

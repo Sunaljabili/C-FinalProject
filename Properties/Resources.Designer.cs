@@ -63,9 +63,9 @@ namespace BackEnd_Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Author {
+        internal static System.Drawing.Bitmap Author1 {
             get {
-                object obj = ResourceManager.GetObject("Author", resourceCulture);
+                object obj = ResourceManager.GetObject("Author1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace BackEnd_Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Author1 {
+        internal static System.Drawing.Bitmap Customers {
             get {
-                object obj = ResourceManager.GetObject("Author1", resourceCulture);
+                object obj = ResourceManager.GetObject("Customers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

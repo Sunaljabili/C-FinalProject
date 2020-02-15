@@ -65,8 +65,6 @@ namespace BackEnd_Final_Project.Forms
         //Author Create Method End
         #endregion
 
-
-
         #region Author Reset
         //Reset Author
         private void BtnReset_Click(object sender, EventArgs e)
@@ -155,6 +153,8 @@ namespace BackEnd_Final_Project.Forms
         //Author Update Method End
         #endregion
 
+
+        #region Delete Method Author
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             if (_author == null)
@@ -178,10 +178,10 @@ namespace BackEnd_Final_Project.Forms
 
         }
 
-       
+        #endregion 
     }
-   
- }
+
+}
 
 
 
