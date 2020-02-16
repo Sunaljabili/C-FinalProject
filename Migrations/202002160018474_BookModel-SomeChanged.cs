@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class BookModelSomeChanges : DbMigration
+    public partial class BookModelSomeChanged : DbMigration
     {
         public override void Up()
         {
@@ -17,6 +17,8 @@
             AddColumn("dbo.Books", "CreatedAt", c => c.DateTime(nullable: false));
             AddColumn("dbo.Books", "Count", c => c.Int(nullable: false));
             AddPrimaryKey("dbo.Books", "Id");
+            CreateIndex("dbo.Books", "AuthorId");
+            AddForeignKey("dbo.Books", "AuthorId", "dbo.Authors", "Id", cascadeDelete: true);
             DropColumn("dbo.Books", "BookId");
             DropColumn("dbo.Books", "BookName");
             DropColumn("dbo.Books", "BookSubject");
@@ -31,6 +33,8 @@
             AddColumn("dbo.Books", "BookSubject", c => c.String(nullable: false));
             AddColumn("dbo.Books", "BookName", c => c.String(nullable: false));
             AddColumn("dbo.Books", "BookId", c => c.Int(nullable: false, identity: true));
+            DropForeignKey("dbo.Books", "AuthorId", "dbo.Authors");
+            DropIndex("dbo.Books", new[] { "AuthorId" });
             DropPrimaryKey("dbo.Books");
             DropColumn("dbo.Books", "Count");
             DropColumn("dbo.Books", "CreatedAt");

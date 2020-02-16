@@ -99,7 +99,7 @@ namespace BackEnd_Final_Project.Forms
                 Book book = new Book();
 
                 book.Name = TxtName.Text;
-                book.Author = CmboxAuthor.Text;
+                
              
 
                 _db.Books.Add(book);
@@ -169,6 +169,8 @@ namespace BackEnd_Final_Project.Forms
             }
         }
         #endregion
+
+
     }
 }
 

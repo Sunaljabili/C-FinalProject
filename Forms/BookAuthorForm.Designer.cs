@@ -46,15 +46,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.SerchBtn = new System.Windows.Forms.Button();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAuthors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.Location = new System.Drawing.Point(29, 122);
+            this.LblName.BackColor = System.Drawing.Color.Aqua;
+            this.LblName.Location = new System.Drawing.Point(29, 138);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(35, 13);
             this.LblName.TabIndex = 0;
@@ -63,7 +69,8 @@
             // SurnameLbl
             // 
             this.SurnameLbl.AutoSize = true;
-            this.SurnameLbl.Location = new System.Drawing.Point(27, 165);
+            this.SurnameLbl.BackColor = System.Drawing.Color.Aqua;
+            this.SurnameLbl.Location = new System.Drawing.Point(29, 189);
             this.SurnameLbl.Name = "SurnameLbl";
             this.SurnameLbl.Size = new System.Drawing.Size(49, 13);
             this.SurnameLbl.TabIndex = 1;
@@ -71,22 +78,27 @@
             // 
             // TxtName
             // 
-            this.TxtName.Location = new System.Drawing.Point(105, 115);
+            this.TxtName.BackColor = System.Drawing.Color.Cyan;
+            this.TxtName.Location = new System.Drawing.Point(140, 138);
+            this.TxtName.Multiline = true;
             this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(100, 20);
+            this.TxtName.Size = new System.Drawing.Size(131, 22);
             this.TxtName.TabIndex = 3;
             // 
             // TxtSurname
             // 
-            this.TxtSurname.Location = new System.Drawing.Point(105, 162);
+            this.TxtSurname.BackColor = System.Drawing.Color.Cyan;
+            this.TxtSurname.Location = new System.Drawing.Point(141, 186);
+            this.TxtSurname.Multiline = true;
             this.TxtSurname.Name = "TxtSurname";
-            this.TxtSurname.Size = new System.Drawing.Size(100, 20);
+            this.TxtSurname.Size = new System.Drawing.Size(130, 23);
             this.TxtSurname.TabIndex = 4;
             // 
             // StatusLbl
             // 
             this.StatusLbl.AutoSize = true;
-            this.StatusLbl.Location = new System.Drawing.Point(27, 212);
+            this.StatusLbl.BackColor = System.Drawing.Color.Aqua;
+            this.StatusLbl.Location = new System.Drawing.Point(29, 230);
             this.StatusLbl.Name = "StatusLbl";
             this.StatusLbl.Size = new System.Drawing.Size(37, 13);
             this.StatusLbl.TabIndex = 5;
@@ -95,77 +107,86 @@
             // RdBtnActive
             // 
             this.RdBtnActive.AutoSize = true;
-            this.RdBtnActive.Location = new System.Drawing.Point(87, 210);
+            this.RdBtnActive.BackColor = System.Drawing.Color.Aqua;
+            this.RdBtnActive.Location = new System.Drawing.Point(105, 226);
             this.RdBtnActive.Name = "RdBtnActive";
             this.RdBtnActive.Size = new System.Drawing.Size(55, 17);
             this.RdBtnActive.TabIndex = 6;
             this.RdBtnActive.TabStop = true;
             this.RdBtnActive.Text = "Active";
-            this.RdBtnActive.UseVisualStyleBackColor = true;
+            this.RdBtnActive.UseVisualStyleBackColor = false;
             // 
             // RdBtnDisabled
             // 
             this.RdBtnDisabled.AutoSize = true;
-            this.RdBtnDisabled.Location = new System.Drawing.Point(178, 212);
+            this.RdBtnDisabled.BackColor = System.Drawing.Color.Aqua;
+            this.RdBtnDisabled.Location = new System.Drawing.Point(198, 228);
             this.RdBtnDisabled.Name = "RdBtnDisabled";
             this.RdBtnDisabled.Size = new System.Drawing.Size(66, 17);
             this.RdBtnDisabled.TabIndex = 7;
             this.RdBtnDisabled.TabStop = true;
             this.RdBtnDisabled.Text = "Disabled";
-            this.RdBtnDisabled.UseVisualStyleBackColor = true;
+            this.RdBtnDisabled.UseVisualStyleBackColor = false;
             // 
             // BtnCreate
             // 
-            this.BtnCreate.Location = new System.Drawing.Point(30, 268);
+            this.BtnCreate.BackColor = System.Drawing.Color.Aqua;
+            this.BtnCreate.Location = new System.Drawing.Point(32, 268);
             this.BtnCreate.Name = "BtnCreate";
-            this.BtnCreate.Size = new System.Drawing.Size(84, 36);
+            this.BtnCreate.Size = new System.Drawing.Size(100, 36);
             this.BtnCreate.TabIndex = 8;
             this.BtnCreate.Text = "Create";
-            this.BtnCreate.UseVisualStyleBackColor = true;
+            this.BtnCreate.UseVisualStyleBackColor = false;
             this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // BtnReset
             // 
-            this.BtnReset.Location = new System.Drawing.Point(148, 268);
+            this.BtnReset.BackColor = System.Drawing.Color.Aquamarine;
+            this.BtnReset.Location = new System.Drawing.Point(165, 268);
             this.BtnReset.Name = "BtnReset";
-            this.BtnReset.Size = new System.Drawing.Size(80, 36);
+            this.BtnReset.Size = new System.Drawing.Size(98, 36);
             this.BtnReset.TabIndex = 9;
             this.BtnReset.Text = "Reset";
-            this.BtnReset.UseVisualStyleBackColor = true;
+            this.BtnReset.UseVisualStyleBackColor = false;
             this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // UpdateBtn
             // 
-            this.UpdateBtn.Location = new System.Drawing.Point(320, 122);
+            this.UpdateBtn.BackColor = System.Drawing.Color.Yellow;
+            this.UpdateBtn.Location = new System.Drawing.Point(361, 88);
             this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.Size = new System.Drawing.Size(90, 30);
+            this.UpdateBtn.Size = new System.Drawing.Size(109, 37);
             this.UpdateBtn.TabIndex = 10;
             this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             this.UpdateBtn.Visible = false;
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // DeleteBtn
             // 
-            this.DeleteBtn.Location = new System.Drawing.Point(475, 122);
+            this.DeleteBtn.BackColor = System.Drawing.Color.Red;
+            this.DeleteBtn.Location = new System.Drawing.Point(580, 88);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(80, 30);
+            this.DeleteBtn.Size = new System.Drawing.Size(97, 37);
             this.DeleteBtn.TabIndex = 11;
             this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             this.DeleteBtn.Visible = false;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // DgvAuthors
             // 
+            this.DgvAuthors.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.DgvAuthors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvAuthors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3});
-            this.DgvAuthors.Location = new System.Drawing.Point(320, 162);
+            this.Column3,
+            this.Column4});
+            this.DgvAuthors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.DgvAuthors.Location = new System.Drawing.Point(336, 138);
             this.DgvAuthors.Name = "DgvAuthors";
-            this.DgvAuthors.Size = new System.Drawing.Size(251, 150);
+            this.DgvAuthors.Size = new System.Drawing.Size(364, 166);
             this.DgvAuthors.TabIndex = 12;
             this.DgvAuthors.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvAuthors_RowHeaderMouseDoubleClick);
             // 
@@ -197,25 +218,51 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(269, 37);
+            this.textBox3.Location = new System.Drawing.Point(277, 37);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(107, 20);
             this.textBox3.TabIndex = 14;
             // 
             // SerchBtn
             // 
-            this.SerchBtn.Location = new System.Drawing.Point(382, 35);
+            this.SerchBtn.Location = new System.Drawing.Point(390, 29);
             this.SerchBtn.Name = "SerchBtn";
-            this.SerchBtn.Size = new System.Drawing.Size(75, 23);
+            this.SerchBtn.Size = new System.Drawing.Size(80, 28);
             this.SerchBtn.TabIndex = 16;
             this.SerchBtn.Text = "Search";
             this.SerchBtn.UseVisualStyleBackColor = true;
             // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Status";
+            this.Column4.Name = "Column4";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BackEnd_Final_Project.Properties.Resources.Nameiconn;
+            this.pictureBox2.Location = new System.Drawing.Point(105, 186);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::BackEnd_Final_Project.Properties.Resources.Name_icon1;
+            this.pictureBox3.Location = new System.Drawing.Point(105, 138);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(27, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::BackEnd_Final_Project.Properties.Resources.PandaAuthor;
             this.pictureBox1.Location = new System.Drawing.Point(14, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -224,7 +271,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 319);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(705, 314);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.LblName);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.SerchBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
@@ -240,10 +291,11 @@
             this.Controls.Add(this.TxtSurname);
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.SurnameLbl);
-            this.Controls.Add(this.LblName);
             this.Name = "BookAuthorForm";
             this.Text = "Author";
             ((System.ComponentModel.ISupportInitialize)(this.DgvAuthors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -271,5 +323,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

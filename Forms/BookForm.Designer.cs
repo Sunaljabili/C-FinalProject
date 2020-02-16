@@ -51,7 +51,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvBook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nTextSale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nTextRent)).BeginInit();
@@ -61,7 +60,7 @@
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.Location = new System.Drawing.Point(24, 91);
+            this.LblName.Location = new System.Drawing.Point(27, 95);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(35, 13);
             this.LblName.TabIndex = 0;
@@ -70,7 +69,7 @@
             // LblAuthor
             // 
             this.LblAuthor.AutoSize = true;
-            this.LblAuthor.Location = new System.Drawing.Point(24, 128);
+            this.LblAuthor.Location = new System.Drawing.Point(24, 136);
             this.LblAuthor.Name = "LblAuthor";
             this.LblAuthor.Size = new System.Drawing.Size(38, 13);
             this.LblAuthor.TabIndex = 1;
@@ -79,7 +78,7 @@
             // LblSalePprice
             // 
             this.LblSalePprice.AutoSize = true;
-            this.LblSalePprice.Location = new System.Drawing.Point(24, 171);
+            this.LblSalePprice.Location = new System.Drawing.Point(24, 178);
             this.LblSalePprice.Name = "LblSalePprice";
             this.LblSalePprice.Size = new System.Drawing.Size(52, 13);
             this.LblSalePprice.TabIndex = 2;
@@ -87,7 +86,8 @@
             // 
             // TxtName
             // 
-            this.TxtName.Location = new System.Drawing.Point(95, 84);
+            this.TxtName.BackColor = System.Drawing.Color.Cyan;
+            this.TxtName.Location = new System.Drawing.Point(132, 88);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(121, 20);
             this.TxtName.TabIndex = 3;
@@ -95,7 +95,7 @@
             // LblStatus
             // 
             this.LblStatus.AutoSize = true;
-            this.LblStatus.Location = new System.Drawing.Point(22, 268);
+            this.LblStatus.Location = new System.Drawing.Point(29, 309);
             this.LblStatus.Name = "LblStatus";
             this.LblStatus.Size = new System.Drawing.Size(37, 13);
             this.LblStatus.TabIndex = 4;
@@ -103,10 +103,10 @@
             // 
             // BtnCreate
             // 
-            this.BtnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnCreate.Location = new System.Drawing.Point(25, 295);
+            this.BtnCreate.BackColor = System.Drawing.Color.LightGreen;
+            this.BtnCreate.Location = new System.Drawing.Point(12, 364);
             this.BtnCreate.Name = "BtnCreate";
-            this.BtnCreate.Size = new System.Drawing.Size(88, 33);
+            this.BtnCreate.Size = new System.Drawing.Size(107, 44);
             this.BtnCreate.TabIndex = 7;
             this.BtnCreate.Text = "Create";
             this.BtnCreate.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@
             // 
             // BtnReset
             // 
-            this.BtnReset.BackColor = System.Drawing.Color.Teal;
-            this.BtnReset.Location = new System.Drawing.Point(128, 295);
+            this.BtnReset.BackColor = System.Drawing.Color.LightGreen;
+            this.BtnReset.Location = new System.Drawing.Point(152, 364);
             this.BtnReset.Name = "BtnReset";
-            this.BtnReset.Size = new System.Drawing.Size(88, 33);
+            this.BtnReset.Size = new System.Drawing.Size(101, 44);
             this.BtnReset.TabIndex = 8;
             this.BtnReset.Text = "Reset";
             this.BtnReset.UseVisualStyleBackColor = false;
@@ -131,19 +131,18 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6,
-            this.Column7});
-            this.DgvBook.Location = new System.Drawing.Point(233, 69);
+            this.Column6});
+            this.DgvBook.Location = new System.Drawing.Point(313, 116);
             this.DgvBook.Name = "DgvBook";
-            this.DgvBook.Size = new System.Drawing.Size(656, 293);
+            this.DgvBook.Size = new System.Drawing.Size(547, 281);
             this.DgvBook.TabIndex = 9;
             // 
             // BbtnUpdate
             // 
             this.BbtnUpdate.BackColor = System.Drawing.Color.Yellow;
-            this.BbtnUpdate.Location = new System.Drawing.Point(637, 27);
+            this.BbtnUpdate.Location = new System.Drawing.Point(569, 55);
             this.BbtnUpdate.Name = "BbtnUpdate";
-            this.BbtnUpdate.Size = new System.Drawing.Size(97, 36);
+            this.BbtnUpdate.Size = new System.Drawing.Size(106, 40);
             this.BbtnUpdate.TabIndex = 10;
             this.BbtnUpdate.Text = "Update";
             this.BbtnUpdate.UseVisualStyleBackColor = false;
@@ -151,9 +150,9 @@
             // BtnDelete
             // 
             this.BtnDelete.BackColor = System.Drawing.Color.Red;
-            this.BtnDelete.Location = new System.Drawing.Point(766, 27);
+            this.BtnDelete.Location = new System.Drawing.Point(698, 55);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(97, 36);
+            this.BtnDelete.Size = new System.Drawing.Size(112, 40);
             this.BtnDelete.TabIndex = 11;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = false;
@@ -161,7 +160,7 @@
             // CmboxAuthor
             // 
             this.CmboxAuthor.FormattingEnabled = true;
-            this.CmboxAuthor.Location = new System.Drawing.Point(97, 128);
+            this.CmboxAuthor.Location = new System.Drawing.Point(132, 128);
             this.CmboxAuthor.Name = "CmboxAuthor";
             this.CmboxAuthor.Size = new System.Drawing.Size(121, 21);
             this.CmboxAuthor.TabIndex = 12;
@@ -169,7 +168,7 @@
             // LblRentPrice
             // 
             this.LblRentPrice.AutoSize = true;
-            this.LblRentPrice.Location = new System.Drawing.Point(24, 206);
+            this.LblRentPrice.Location = new System.Drawing.Point(24, 226);
             this.LblRentPrice.Name = "LblRentPrice";
             this.LblRentPrice.Size = new System.Drawing.Size(54, 13);
             this.LblRentPrice.TabIndex = 15;
@@ -177,14 +176,14 @@
             // 
             // nTextSale
             // 
-            this.nTextSale.Location = new System.Drawing.Point(95, 164);
+            this.nTextSale.Location = new System.Drawing.Point(130, 171);
             this.nTextSale.Name = "nTextSale";
             this.nTextSale.Size = new System.Drawing.Size(120, 20);
             this.nTextSale.TabIndex = 17;
             // 
             // nTextRent
             // 
-            this.nTextRent.Location = new System.Drawing.Point(95, 199);
+            this.nTextRent.Location = new System.Drawing.Point(130, 219);
             this.nTextRent.Name = "nTextRent";
             this.nTextRent.Size = new System.Drawing.Size(120, 20);
             this.nTextRent.TabIndex = 18;
@@ -192,7 +191,7 @@
             // RdBtnActive
             // 
             this.RdBtnActive.AutoSize = true;
-            this.RdBtnActive.Location = new System.Drawing.Point(65, 266);
+            this.RdBtnActive.Location = new System.Drawing.Point(95, 307);
             this.RdBtnActive.Name = "RdBtnActive";
             this.RdBtnActive.Size = new System.Drawing.Size(55, 17);
             this.RdBtnActive.TabIndex = 19;
@@ -203,7 +202,7 @@
             // RdBtnDisabled
             // 
             this.RdBtnDisabled.AutoSize = true;
-            this.RdBtnDisabled.Location = new System.Drawing.Point(131, 264);
+            this.RdBtnDisabled.Location = new System.Drawing.Point(184, 309);
             this.RdBtnDisabled.Name = "RdBtnDisabled";
             this.RdBtnDisabled.Size = new System.Drawing.Size(66, 17);
             this.RdBtnDisabled.TabIndex = 20;
@@ -214,7 +213,7 @@
             // LblCount
             // 
             this.LblCount.AutoSize = true;
-            this.LblCount.Location = new System.Drawing.Point(27, 237);
+            this.LblCount.Location = new System.Drawing.Point(29, 267);
             this.LblCount.Name = "LblCount";
             this.LblCount.Size = new System.Drawing.Size(35, 13);
             this.LblCount.TabIndex = 21;
@@ -222,7 +221,7 @@
             // 
             // nTextCount
             // 
-            this.nTextCount.Location = new System.Drawing.Point(97, 237);
+            this.nTextCount.Location = new System.Drawing.Point(132, 260);
             this.nTextCount.Name = "nTextCount";
             this.nTextCount.Size = new System.Drawing.Size(118, 20);
             this.nTextCount.TabIndex = 22;
@@ -252,16 +251,12 @@
             this.Column6.HeaderText = "Count";
             this.Column6.Name = "Column6";
             // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Status";
-            this.Column7.Name = "Column7";
-            // 
             // BookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 372);
+            this.BackColor = System.Drawing.Color.Turquoise;
+            this.ClientSize = new System.Drawing.Size(872, 430);
             this.Controls.Add(this.nTextCount);
             this.Controls.Add(this.LblCount);
             this.Controls.Add(this.RdBtnDisabled);
@@ -316,6 +311,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

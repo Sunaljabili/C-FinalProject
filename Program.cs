@@ -16,8 +16,7 @@ namespace BackEnd_Final_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookForm());
-       
+            Application.Run(new BookAuthorForm ());
         }
     }
 }
