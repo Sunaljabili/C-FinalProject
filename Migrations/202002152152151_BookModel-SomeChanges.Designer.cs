@@ -13,7 +13,7 @@ namespace BackEnd_Final_Project.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202002151930370_BookModel-SomeChanges"; }
+            get { return "202002152152151_BookModel-SomeChanges"; }
         }
         
         string IMigrationMetadata.Source

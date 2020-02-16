@@ -14,6 +14,8 @@ namespace BackEnd_Final_Project.Models
         [Required]
         public string Name { get; set; }
 
+
+
         [Required]
         public int AuthorId { get; set; }
 
@@ -24,6 +26,12 @@ namespace BackEnd_Final_Project.Models
 
         [Required]
         public decimal RentPrice { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public int Count { get; set; }
+
+        public Author Author { get; set; }
 
 
     }

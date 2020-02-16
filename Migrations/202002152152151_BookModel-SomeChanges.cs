@@ -10,10 +10,12 @@
             DropPrimaryKey("dbo.Books");
             AddColumn("dbo.Books", "Id", c => c.Int(nullable: false, identity: true));
             AddColumn("dbo.Books", "Name", c => c.String(nullable: false));
-            AddColumn("dbo.Books", "Author", c => c.String(nullable: false));
+            AddColumn("dbo.Books", "AuthorId", c => c.Int(nullable: false));
             AddColumn("dbo.Books", "Status", c => c.Boolean(nullable: false));
             AddColumn("dbo.Books", "SalePrice", c => c.Decimal(nullable: false, precision: 18, scale: 2));
             AddColumn("dbo.Books", "RentPrice", c => c.Decimal(nullable: false, precision: 18, scale: 2));
+            AddColumn("dbo.Books", "CreatedAt", c => c.DateTime(nullable: false));
+            AddColumn("dbo.Books", "Count", c => c.Int(nullable: false));
             AddPrimaryKey("dbo.Books", "Id");
             DropColumn("dbo.Books", "BookId");
             DropColumn("dbo.Books", "BookName");
@@ -30,10 +32,12 @@
             AddColumn("dbo.Books", "BookName", c => c.String(nullable: false));
             AddColumn("dbo.Books", "BookId", c => c.Int(nullable: false, identity: true));
             DropPrimaryKey("dbo.Books");
+            DropColumn("dbo.Books", "Count");
+            DropColumn("dbo.Books", "CreatedAt");
             DropColumn("dbo.Books", "RentPrice");
             DropColumn("dbo.Books", "SalePrice");
             DropColumn("dbo.Books", "Status");
-            DropColumn("dbo.Books", "Author");
+            DropColumn("dbo.Books", "AuthorId");
             DropColumn("dbo.Books", "Name");
             DropColumn("dbo.Books", "Id");
             AddPrimaryKey("dbo.Books", "BookId");

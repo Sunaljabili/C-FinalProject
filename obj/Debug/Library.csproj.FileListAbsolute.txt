@@ -29,3 +29,4 @@ C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migration
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.OrderForm.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.CustomerIdAdded.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.BookForm.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.BookModelSomeChanges.resources

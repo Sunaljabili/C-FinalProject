@@ -123,9 +123,9 @@
     <Compile Include="Migrations\202002151148312_CustomerIdAdded.designer.cs">
       <DependentUpon>202002151148312_CustomerIdAdded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202002151930370_BookModel-SomeChanges.cs" />
-    <Compile Include="Migrations\202002151930370_BookModel-SomeChanges.designer.cs">
-      <DependentUpon>202002151930370_BookModel-SomeChanges.cs</DependentUpon>
+    <Compile Include="Migrations\202002152152151_BookModel-SomeChanges.cs" />
+    <Compile Include="Migrations\202002152152151_BookModel-SomeChanges.designer.cs">
+      <DependentUpon>202002152152151_BookModel-SomeChanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
@@ -168,18 +168,24 @@
     <EmbeddedResource Include="Migrations\202002151148312_CustomerIdAdded.resx">
       <DependentUpon>202002151148312_CustomerIdAdded.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002151930370_BookModel-SomeChanges.resx">
-      <DependentUpon>202002151930370_BookModel-SomeChanges.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002152152151_BookModel-SomeChanges.resx">
+      <DependentUpon>202002152152151_BookModel-SomeChanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
