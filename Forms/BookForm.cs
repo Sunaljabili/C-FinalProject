@@ -18,25 +18,25 @@ namespace BackEnd_Final_Project.Forms
         {
             _db = new LibraryDbContext();
             InitializeComponent();
-            FillBooks();
+            //    FillBooks();
         }
 
         #region Fill Method for Book
         // Fill Method for Book
 
-        public void FillBooks()
-        {
-            DgvBook.Rows.Clear();
+        //public void FillBooks()
+        //{
+        //    DgvBook.Rows.Clear();
 
-            List<Book> books = _db.Books.ToList();
+        //    List<Book> books = _db.Books.ToList();
 
 
-            foreach (var item in books)
-            {
-                DgvBook.Rows.Add(item.Id, item.Name, item.Author, item.SalePrice, item.RentPrice, item.Status ? "Active" : "Disabled");
+        //    foreach (var item in books)
+        //    {
+        //        DgvBook.Rows.Add(item.Id, item.Name, item.Author, item.SalePrice, item.RentPrice, item.Status ? "Active" : "Disabled");
 
-            }
-        }
+        //    }
+        //}
 
 
         // Fill Method for Book
@@ -64,7 +64,7 @@ namespace BackEnd_Final_Project.Forms
 
 
         #region Create Method
-       // Create Method
+        // Create Method
         private void BtnCreate_Click(object sender, EventArgs e)
         {
 
@@ -76,7 +76,7 @@ namespace BackEnd_Final_Project.Forms
             {
                 MessageBox.Show("Author teyin  edin");
             }
-            if(nTextSale.Value == 0)
+            if (nTextSale.Value == 0)
             {
                 MessageBox.Show("Reqem daxil edin");
             }
@@ -92,20 +92,20 @@ namespace BackEnd_Final_Project.Forms
             {
                 MessageBox.Show("Status sechin");
             }
-            if (!string.IsNullOrEmpty(TxtName.Text) && !string.IsNullOrEmpty(CmboxAuthor.Text) 
+            if (!string.IsNullOrEmpty(TxtName.Text) && !string.IsNullOrEmpty(CmboxAuthor.Text)
 
-                && (nTextCount.Value ==0) && (nTextRent.Value == 0) && (nTextSale.Value == 0) && (RdBtnActive.Checked || RdBtnDisabled.Checked))
+                && (nTextCount.Value == 0) && (nTextRent.Value == 0) && (nTextSale.Value == 0) && (RdBtnActive.Checked || RdBtnDisabled.Checked))
             {
                 Book book = new Book();
 
                 book.Name = TxtName.Text;
-                
-             
+
+
 
                 _db.Books.Add(book);
                 _db.SaveChanges();
 
-              
+
 
                 //FillCustomers();
             }
@@ -133,7 +133,7 @@ namespace BackEnd_Final_Project.Forms
                 RdBtnActive.Checked = false;
                 RdBtnDisabled.Checked = false;
 
-                FillBooks();
+                //FillBooks();
                 Reset();
 
             }
@@ -163,11 +163,12 @@ namespace BackEnd_Final_Project.Forms
             RdBtnActive.Checked = false;
             RdBtnDisabled.Checked = false;
 
-           if(BtnCreate.Enabled == false)
+            if (BtnCreate.Enabled == false)
             {
                 BtnCreate.Enabled = true;
             }
         }
+
         #endregion
 
 

@@ -63,6 +63,16 @@ namespace BackEnd_Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BookPandaCustomer {
+            get {
+                object obj = ResourceManager.GetObject("BookPandaCustomer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Email_icon {
             get {
                 object obj = ResourceManager.GetObject("Email icon", resourceCulture);
@@ -106,6 +116,16 @@ namespace BackEnd_Final_Project.Properties {
         internal static System.Drawing.Bitmap Panda {
             get {
                 object obj = ResourceManager.GetObject("Panda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Panda_Read_book {
+            get {
+                object obj = ResourceManager.GetObject("Panda Read book", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

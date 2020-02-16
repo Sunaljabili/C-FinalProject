@@ -83,6 +83,7 @@
             // 
             // FullNameTxt
             // 
+            this.FullNameTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.FullNameTxt.Location = new System.Drawing.Point(113, 107);
             this.FullNameTxt.Name = "FullNameTxt";
             this.FullNameTxt.Size = new System.Drawing.Size(116, 20);
@@ -90,6 +91,7 @@
             // 
             // PhoneTxt
             // 
+            this.PhoneTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PhoneTxt.Location = new System.Drawing.Point(113, 150);
             this.PhoneTxt.Name = "PhoneTxt";
             this.PhoneTxt.Size = new System.Drawing.Size(116, 20);
@@ -97,6 +99,7 @@
             // 
             // EmailTxt
             // 
+            this.EmailTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EmailTxt.Location = new System.Drawing.Point(113, 195);
             this.EmailTxt.Name = "EmailTxt";
             this.EmailTxt.Size = new System.Drawing.Size(116, 20);
@@ -135,42 +138,46 @@
             // 
             // BtnCreate
             // 
+            this.BtnCreate.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.BtnCreate.Location = new System.Drawing.Point(48, 275);
             this.BtnCreate.Name = "BtnCreate";
             this.BtnCreate.Size = new System.Drawing.Size(75, 32);
             this.BtnCreate.TabIndex = 13;
             this.BtnCreate.Text = "Create";
-            this.BtnCreate.UseVisualStyleBackColor = true;
+            this.BtnCreate.UseVisualStyleBackColor = false;
             this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // ResetBtn
             // 
+            this.ResetBtn.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ResetBtn.Location = new System.Drawing.Point(150, 275);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(79, 32);
             this.ResetBtn.TabIndex = 14;
             this.ResetBtn.Text = "Reset";
-            this.ResetBtn.UseVisualStyleBackColor = true;
+            this.ResetBtn.UseVisualStyleBackColor = false;
             this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
             // UpdateBtn
             // 
+            this.UpdateBtn.BackColor = System.Drawing.Color.Yellow;
             this.UpdateBtn.Location = new System.Drawing.Point(289, 44);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.Size = new System.Drawing.Size(82, 33);
             this.UpdateBtn.TabIndex = 15;
             this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // DeleteBtn
             // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.Red;
             this.DeleteBtn.Location = new System.Drawing.Point(390, 44);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(75, 33);
             this.DeleteBtn.TabIndex = 16;
             this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // DgvCustomer
@@ -182,7 +189,7 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.DgvCustomer.Location = new System.Drawing.Point(270, 95);
+            this.DgvCustomer.Location = new System.Drawing.Point(252, 98);
             this.DgvCustomer.Name = "DgvCustomer";
             this.DgvCustomer.Size = new System.Drawing.Size(445, 236);
             this.DgvCustomer.TabIndex = 17;
@@ -231,9 +238,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Image = global::BackEnd_Final_Project.Properties.Resources.BookPandaCustomer;
+            this.pictureBox1.Location = new System.Drawing.Point(103, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -242,6 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(720, 335);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);

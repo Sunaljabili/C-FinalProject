@@ -7,13 +7,13 @@ namespace BackEnd_Final_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class BookModelSomeChanged : IMigrationMetadata
+    public sealed partial class BookCreated : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(BookModelSomeChanged));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(BookCreated));
         
         string IMigrationMetadata.Id
         {
-            get { return "202002160018474_BookModel-SomeChanged"; }
+            get { return "202002161334591_BookCreated"; }
         }
         
         string IMigrationMetadata.Source
