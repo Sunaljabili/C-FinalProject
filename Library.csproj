@@ -103,29 +103,9 @@
     <Compile Include="Forms\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.cs" />
-    <Compile Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.designer.cs">
-      <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002141112566_AuthorCreated.cs" />
-    <Compile Include="Migrations\202002141112566_AuthorCreated.designer.cs">
-      <DependentUpon>202002141112566_AuthorCreated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002141615275_AuthorAdd.cs" />
-    <Compile Include="Migrations\202002141615275_AuthorAdd.designer.cs">
-      <DependentUpon>202002141615275_AuthorAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002141636406_CustomerAdd.cs" />
-    <Compile Include="Migrations\202002141636406_CustomerAdd.designer.cs">
-      <DependentUpon>202002141636406_CustomerAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002151148312_CustomerIdAdded.cs" />
-    <Compile Include="Migrations\202002151148312_CustomerIdAdded.designer.cs">
-      <DependentUpon>202002151148312_CustomerIdAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202002161334591_BookCreated.cs" />
-    <Compile Include="Migrations\202002161334591_BookCreated.designer.cs">
-      <DependentUpon>202002161334591_BookCreated.cs</DependentUpon>
+    <Compile Include="Migrations\202002161404384_BookAndCustomerAndAuthorAndReportAndManagerAdded.cs" />
+    <Compile Include="Migrations\202002161404384_BookAndCustomerAndAuthorAndReportAndManagerAdded.designer.cs">
+      <DependentUpon>202002161404384_BookAndCustomerAndAuthorAndReportAndManagerAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
@@ -153,23 +133,8 @@
     <EmbeddedResource Include="Forms\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002131224196_BookAndCustomerAndManagerAndReportCreated.resx">
-      <DependentUpon>202002131224196_BookAndCustomerAndManagerAndReportCreated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002141112566_AuthorCreated.resx">
-      <DependentUpon>202002141112566_AuthorCreated.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002141615275_AuthorAdd.resx">
-      <DependentUpon>202002141615275_AuthorAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002141636406_CustomerAdd.resx">
-      <DependentUpon>202002141636406_CustomerAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002151148312_CustomerIdAdded.resx">
-      <DependentUpon>202002151148312_CustomerIdAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002161334591_BookCreated.resx">
-      <DependentUpon>202002161334591_BookCreated.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002161404384_BookAndCustomerAndAuthorAndReportAndManagerAdded.resx">
+      <DependentUpon>202002161404384_BookAndCustomerAndAuthorAndReportAndManagerAdded.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

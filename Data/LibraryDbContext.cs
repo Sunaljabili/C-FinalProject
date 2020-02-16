@@ -12,7 +12,7 @@ namespace BackEnd_Final_Project.Data
     {
        
 
-        public LibraryDbContext() : base("BookLibrary")
+        public LibraryDbContext() : base("BookLibraryManagement")
         {
 
         }

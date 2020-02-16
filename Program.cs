@@ -1,4 +1,4 @@
-﻿using System;
+﻿//using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,12 +11,12 @@ namespace BackEnd_Final_Project
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
+        //[STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DashBoardForm ());
+            Application.Run(new  CustomerForm());
         }
     }
 }

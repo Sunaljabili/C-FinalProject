@@ -12,7 +12,6 @@ C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.xml
 C:\Users\Code\Desktop\C# Project Final\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\Library.csproj.CopyComplete
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.BookAndCustomerAndManagerAndReportCreated.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.LoginForm.resources
 C:\Users\Code\Desktop\C# Project Final\bin\Debug\CryptoHelper.dll
 C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -23,10 +22,6 @@ C:\Users\Code\Desktop\C# Project Final\bin\Debug\Microsoft.AspNetCore.Cryptograp
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.DashBoardForm.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.BookAuthorForm.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.CustomerForm.resources
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.AuthorCreated.resources
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.AuthorAdd.resources
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.CustomerAdd.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.OrderForm.resources
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.CustomerIdAdded.resources
 C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Forms.BookForm.resources
-C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.BookCreated.resources
+C:\Users\Code\Desktop\C# Project Final\obj\Debug\BackEnd_Final_Project.Migrations.BookAndCustomerAndAuthorAndReportAndManagerAdded.resources
